@@ -3,9 +3,9 @@ resources:
     type: image
     flags:
       - deploy-ecs-basic
-    integration: dr-ecr
+    integration: ecr-integration
     pointer:
-      sourceName: "679404489841.dkr.ecr.us-east-1.amazonaws.com/deploy-ecs-basic"
+      sourceName: "348566687808.dkr.ecr.us-east-1.amazonaws.com/deploy-ecs-basic"
     seed:
       versionName: "latest"
 
@@ -38,7 +38,7 @@ resources:
     type: cluster
     flags:
       - deploy-ecs-basic
-    integration: dr-aws
+    integration: AWS-Integration
     pointer:
-      sourceName : "deploy-ecs-basic" #name of the cluster to which we are deploying
-      region: "us-east-1"
+      sourceName : "wifi-location-sensing-cluster" #name of the cluster to which we are deploying
+      region: "us-east-1b"
