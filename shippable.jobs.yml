@@ -11,7 +11,7 @@ jobs:
     flags:
       - deploy-ecs-basic
     steps:
-     - IN: deploy-ecs-basic-image
+#     - IN: deploy-ecs-basic-image
 #     - IN: deploy-ecs-basic-docker-options
 #     - IN: deploy-ecs-basic-params
 #     - IN: deploy-ecs-basic-replicas
